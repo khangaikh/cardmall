@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CARDMALL</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CARDMALL</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-left">
+            <div class="input-group search">
+              <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="Хайлт">
+            </div>
+          </form>
+          <ul class="nav navbar-nav"> 
+              <li><a href="page.html">Бэлгийн карт авах</a></li> 
+              <li><a href="page2.html">Бэлгийн карт зарах</a></li> 
+          </ul>
+          <ul class="nav navbar-nav navbar-right"> 
+              <li><a href="#">Тусламж</a></li> 
+              <li><a href="#">Бүртгэл</a></li> 
+              <li><a href="login.html">Нэвтрэх</a></li> 
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/banner1.jpg" alt="...">
+              <div class="carousel-caption">
+                <h2>Зөвхөн танд зориулсан бэлгийн карт</h2>
+                <p>Мянга мянган дуртай брэндээ 30% хөнгөлж байна.</p>
+                <button type="button" class="btn btn-default btn-lg">Карт авах</button><br><br>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/banner2.jpg" alt="...">
+              <div class="carousel-caption">
+                <h2>Энэ зуны ухаалаг худалдан авалт</h2>
+                <p>Гадуур хэрэглэх хэрэгсэлүүдээ аваарай.</p>
+                <button type="button" class="btn btn-default btn-lg">Карт авах</button><br><br>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/banner3.jpg" alt="...">
+              <div class="carousel-caption">
+                <h2>Биднээс аваарай</h2>
+                <p>Найзуудаа уриад аль алинаас нь 5000₮ аваарай. </p>
+                <button type="button" class="btn btn-default btn-lg">Карт авах</button><br><br>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> <!-- carousel end -->
+        <div class="brandsSearchBar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" placeholder="Хайлт" aria-describedby="sizing-addon1">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+                        </div>
+                    </div> 
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="sectionHeader">Хамгийн Эрэлттэй Хөнгөлөлтүүд</h2>
+    </div>
+    <div class="container">
+        <div class="row brand">
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/dell-46c41aec7fd649915db70172698c286e.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/bed_bath_and_beyond-0612b797cb87f9c49651af7bcec5b767.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/lowes-c6c845080808df9ba746ebd600b5e20e.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/tjmaxx-afe54fca027cd114dcecdb6d388083d5.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/itunes-10c438e9aead293196e371184a4cfba9.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- brand end -->
+        <div class="row brand">
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/dell-46c41aec7fd649915db70172698c286e.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/bed_bath_and_beyond-0612b797cb87f9c49651af7bcec5b767.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/lowes-c6c845080808df9ba746ebd600b5e20e.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/tjmaxx-afe54fca027cd114dcecdb6d388083d5.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="thumbnail">
+              <img src="img/itunes-10c438e9aead293196e371184a4cfba9.svg" alt="...">
+              <div class="caption">
+                <h3>T.J. Maxx</h3>
+                <p>Save up to 18.1%</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- brand end -->
+        <div class="row text-center">
+             <button type="button" class="btn btn-default btn-lg">Бүх Брэнд Үзэх</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="sectionHeader">Бидний Онцлох Ангилалууд</h2>
+
+        <div class="row customgrid">
+            <div class="column">
+              <div class="item">
+                    <img src="img/beauty.jpg" width="330"><div class="gray"></div>
+                  <div class="well"> 
+                    Гоо сайхан
+                  </div>
+                </div>
+                <div class="item">
+                    <img src="img/baby_and_kids.jpg" width="330"><div class="gray"></div>
+                    <div class="well"> 
+                        Хүүхэд & Багачууд
+                    </div>
+                </div>  
+            </div>
+            <div class="column wide">
+                <div class="item">
+                <img src="img/food_and_beverage.jpg" width="445">
+                <div class="gray"></div>
+                    <div class="well"> 
+                        Хүнс & Шингэн зүйлс
+                    </div>
+                </div>
+                <div class="item">
+                <img src="img/restaurants.jpg" width="445"><div class="gray"></div>
+                    <div class="well">
+                        Зоогийн газарууд 
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item">
+                <img src="img/home_and_garden.jpg" width="330"><div class="gray"></div>
+                    <div class="well"> 
+                        Гэр & Цэцэрлэг
+                    </div>
+                </div>
+                <div class="item">
+                <img src="img/pets.jpg" width="330"><div class="gray"></div>
+                    <div class="well"> 
+                        Тэжээмэл амьтан
+                    </div>
+                </div>   
+            </div>
+           
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Хэзээч Хаанаасч Хадгал</h1>
+                <p>Утасны дугаараа хийгээд аппликешнээ татаж аваарай</p>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span></div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="#### ####">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Надад Илгээ</button>
+                </form>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="badger" src="img/itunes-badge.png">
+                    </div>
+                    <div class="col-sm-3">
+                        <img class="badger" src="img/android-badge.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="img/Raise_homepage_Devices_gray.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-responsive" src="img/guarantee_placeholder.jpg">
+            </div>
+            <div class="col-md-4" style="display: table;">
+                <div class="guarantee">
+                    <img class="img-responsive" src="img/guarantee_shield.svg"><br>
+                    <p><strong>100 өдөр дотороо буцаалт</strong></p>
+                    <br>
+                    <br>
+                    <a href="#">Дэлгэрэнгүй</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">      
+
+      <hr>
+    </div> <!-- /container -->
+
+      <footer>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+              <h3>Тухай</h3>
+              <p>Бидний тухай </p>
+              <p>Бидний түүх </p>
+              <p>Юу хийдэг вэ</p>
+              <p>Мэдээ </p>
+              <p>Ажлын байр </p>
+            </div>
+            <div class="col-md-3">
+              <h3>Тусламж</h3>
+              <p>Бидний тухай </p>
+              <p>Бидний түүх </p>
+              <p>Юу хийдэг вэ</p>
+              <p>Мэдээ </p>
+              <p>Ажлын байр </p>
+           </div>
+            <div class="col-md-3">
+              <h3>Хамтрагчид</h3>
+              <p>Бидний тухай </p>
+              <p>Бидний түүх </p>
+              <p>Юу хийдэг вэ</p>
+              <p>Мэдээ </p>
+              <p>Ажлын байр </p>
+            </div>
+            <div class="col-md-3">
+            <h3>Холбоо барих</h3>
+                <p><img class="badger2" src="img/itunes-badge.png"></p>
+                <p><img class="badger2" src="img/android-badge.png"></p>
+            </div>
+      </div>
+            <p class="text-center">&copy; 2016 Company, Inc.</p>
+        </div>
+      </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){       
+   var scroll_start = 5;
+   var startchange = $('.navbar-fixed-top');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-fixed-top").css('background-color', '#fff');
+          $(".navbar-fixed-top").css('border-bottom', '1px solid #e0e2e3');
+           $(".navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand").css('color', '#3d454d');
+       } else {
+          $('.navbar-fixed-top').css('background-color', 'transparent');
+          $(".navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand").css('color', '#fff');
+          $(".navbar-fixed-top").css('border-bottom', '1px solid transparent');
+       }
+   });
+    }
+});
+    </script>
+  </body>
+</html>
